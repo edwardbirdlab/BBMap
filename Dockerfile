@@ -5,7 +5,7 @@ ENV BBTOOLS_URL https://sourceforge.net/projects/bbmap/files/BBMap_${BBTOOLS_VER
 ENV BBTOOLS_DIR /opt/bbtools
 
 RUN apt-get update && \
-    apt-get install -y wget && \
+    apt-get install -y wget procps && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
